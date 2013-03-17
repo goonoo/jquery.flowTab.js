@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery flowTab plugin example</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="jquery.flowTab.js"></script>
+	<script>
+	<!--
+		$(function(){
+			$('#tabs').flowTab();
+		});
+	//-->
+	</script>
+	<style type="text/css">
+	#tabs {
+		position: relative;
+		width: 300px;
+		height: 100px;
+	}
+	#tabs .heading {
+		display: inline-block;
+		height: 15px;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 5px;
+		border: solid 1px #999;
+		background-color: #eee;
+		font: 13px/1.2 sans-serif;
+	}
+	#tabs .headingEnabled {
+		background-color: #fff;
+		font-weight: bold;
+	}
+	#tabs div {
+		position: absolute;
+		top: 30px;
+		width: 278px;
+		height: 48px;
+		padding: 10px;
+		border: solid 1px #999;
+		background-color: #eef;
+	}
+	#tabs div.disabled {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<h1>jQuery flowTab plugin example</h1>
+	<div id="tabs">
+		<h2 class="heading">tab1</h2>
+		<div>tab1 content <a href="#">link example</a></div>
+		<h2 class="heading">tab2</h2>
+		<div>tab2 content <a href="#">link example</a></div>
+		<h2 class="heading">tab3</h2>
+		<div>tab3 content <a href="#">link example</a></div>
+	</div>
+</body>
+</html>
